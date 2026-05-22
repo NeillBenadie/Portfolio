@@ -53,7 +53,7 @@ body {
 	height: auto;
 	min-height: 100px;
 	line-height: 1.2;
-	margin: 0 auto;
+	/* margin: 0 auto; */
 	padding: 20px;
 	text-align: center;
 	text-decoration: none;
@@ -61,6 +61,11 @@ body {
 	width: 100%;
 	max-width: 400px;
 	box-sizing: border-box;
+}
+#header .section .logo{
+	display: flex;
+	align-items: center;
+	justify-content: flex-start;
 }
 /* Contact Info */
 #header .Bio .contact-info {
@@ -679,12 +684,14 @@ ol, ul, li {
 		word-break: break-word;
 		hyphens: auto;
 	}
-	  .carousel {
+	.carousel {
     padding-top: 90%;
+
   }
   .carousel__snapper {
     padding: 12px;
     align-items: flex-start;
+	overflow-x: auto;
   }
   .carousel__navigation {
     padding-top: 12px;
