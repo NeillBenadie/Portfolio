@@ -477,10 +477,18 @@ ol, ul, li {
   scroll-behavior: smooth;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
+  touch-action: pan-x;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
   counter-reset: item;
   border-radius: 5px;
   margin: 0;
   padding: 0;
+}
+.carousel__viewport::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display: none;
 }
 .carousel__slide {
   position: relative;
@@ -619,7 +627,9 @@ ol, ul, li {
     padding-top: 65%;
   }
   .carousel__snapper {
-    padding: 16px;
+    padding: 12px;
+    align-items: flex-start;
+	overflow-x: auto;
   }
 
   .carousel__navigation-button {
