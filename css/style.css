@@ -555,8 +555,7 @@ ol, ul, li {
   justify-content: center;
   width: 2rem;
   height: 2rem;
-  /* min-width: 2rem;
-  min-height: 2rem; */
+
   background-color: #333;
   color: #fff;
   text-decoration: none;
@@ -565,9 +564,10 @@ ol, ul, li {
   transition: transform 0.15s ease, background-color 0.15s ease;
 }
 .carousel__navigation-button:hover,
-.carousel__navigation-button:focus {
+.carousel__navigation-button:focus,
+.carousel__navigation-button.active {
   transform: scale(1.05);
-  background-color: #555;
+  background-color: #767474;
 }
 
 /* Tablet */
@@ -636,10 +636,17 @@ ol, ul, li {
   height: 0;
   display:none;
 }
-  .carousel__navigation-button {
-    width: 1rem;
-    height: 1rem;
-  }
+.carousel__navigation-button {
+width: 1rem;
+height: 1rem;
+}
+
+.carousel__navigation {
+padding-top: 5px;
+border-radius: 5px;
+backdrop-filter: blur(10px);
+
+}
   .carousel__viewport::-webkit-scrollbar-track {
   background: transparent;
 }
@@ -714,13 +721,16 @@ ol, ul, li {
 	overflow-x: auto;
   }
   .carousel__navigation {
-    padding-top: 12px;
-  }
-  .carousel__navigation-button {
-    width: 1rem;
-    height: 1rem;
+    padding-top: 5px;
+	border-radius: 5px;
+	backdrop-filter: blur(10px);
 
   }
+  .carousel__navigation-button {
+    width: 2rem;
+    height: 2rem;
+  }
+
   .carousel__viewport::-webkit-scrollbar-track {
   background: transparent;
 }
@@ -728,4 +738,89 @@ ol, ul, li {
   background: transparent;
 }
 	
+}
+
+/*bigger Tablets */
+@media screen and (max-width: 1024px) {
+	#header {
+		padding: 8px;
+	}
+
+	#header .section .logo a {
+		max-width: 100%;
+		font-size: 42px;
+		padding: 15px;
+	}
+
+	#header .Bio .contact-info {
+		justify-content: center;
+		text-align: center;
+	}
+
+	#body {
+		width: 100%;
+		max-width: 960px;
+		padding: 20px 10px 50px;
+		box-sizing: border-box;
+	}
+	#body > .section {
+		display: block;
+	}
+	#body > .section > .featured,
+	#body > .section > .section {
+		width: 100%;
+		max-width: 100%;
+		margin: 0 auto 20px;
+		box-sizing: border-box;
+	}
+	#body div .featured,
+	#body div .section div {
+		width: 100%;
+		max-width: 100%;
+		padding: 30px 12px;
+		box-sizing: border-box;
+	}
+	#body div .section .article {
+		height: auto;
+		margin-bottom: 20px;
+		padding: 30px 12px 20px;
+	}
+	#body div .featured p,
+	#body div .section .article p {
+		overflow-wrap: break-word;
+		word-break: break-word;
+		hyphens: auto;
+		
+	}
+
+	  .carousel {
+    padding-top: 65%;
+  }
+  .carousel__snapper {
+    padding: 12px;
+    align-items: flex-start;
+	overflow-x: auto;
+  }
+.carousel__viewport::-webkit-scrollbar {
+  width: 0;
+  height: 0;
+  display:none;
+}
+
+ .carousel__navigation {
+    padding-top: 5px;
+	border-radius: 5px;
+	backdrop-filter: blur(10px);
+
+  }
+  .carousel__navigation-button {
+    width: 1rem;
+    height: 1rem;
+  }
+  .carousel__viewport::-webkit-scrollbar-track {
+  background: transparent;
+}
+.carousel__viewport::-webkit-scrollbar-thumb {
+  background: transparent;
+}
 }
