@@ -539,6 +539,7 @@ ol, ul, li {
   justify-content: center;
   align-items: center;
   position: relative;
+  padding: 1px;
 }
 .carousel__navigation-list {
   gap: 0.5rem;
