@@ -40,7 +40,6 @@ body {
 	width: 100%;
 	max-width: 960px;
 	box-sizing: border-box;
-	border: 1px solid rgba(255, 255, 255, 0.2);
 }
 /* Logo */
 #header .section .logo a {
@@ -539,6 +538,7 @@ ol, ul, li {
   justify-content: center;
   align-items: center;
   position: relative;
+  padding: 3px;
 }
 .carousel__navigation-list {
   gap: 0.5rem;
@@ -800,7 +800,9 @@ backdrop-filter: blur(10px);
     padding: 12px;
     align-items: flex-start;
 	overflow-x: auto;
+	padding-bottom: 50px;
   }
+
 .carousel__viewport::-webkit-scrollbar {
   width: 0;
   height: 0;
@@ -811,6 +813,7 @@ backdrop-filter: blur(10px);
     padding-top: 5px;
 	border-radius: 5px;
 	backdrop-filter: blur(10px);
+	display: border-box;
 
   }
   .carousel__navigation-button {
