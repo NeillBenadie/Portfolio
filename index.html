@@ -43,87 +43,167 @@
 	</div>
 
 	<div id="body">
-        <section class="carousel" aria-label="Gallery">
-            <ul class="carousel__viewport">
-                <li id="carousel__slide1"
-                    tabindex="0"
-                    class="carousel__slide">
-                    <div class="carousel__snapper">
-                        <div class="work-positions">
-                            <h3>IT Technician / Data Analyst - BBEnergy | <b>August 2022 - April 2026</b></h3>
-                            <ul class="work-duties-list">
-                                <li>Provided end-user technical support for IT hardware and software.</li>
-                                <li>Installed, configured, maintained, and monitored Windows Server-based systems.</li>
-                                <li>Installed, configured, maintained, and monitored Linux servers for SFTP and file services.</li>
-                                <li>Deployed and configured systems, software, and SaaS solutions, including IoT platforms such as EcoStruxure Power Monitoring Expert, SQL Server, SQL Server Reporting Services (SSRS), and IIS web servers.</li>
-                                <li>Managed deployments and database migrations on Microsoft Azure cloud platforms.</li>
-                                <li>Performed data migrations, network support, and server administration tasks.</li>
-                                <li>Assisted with API integration and troubleshooting using tools such as Postman and other third-party platforms.</li>
-                                <br>
-                                <li>Managed data and analytics processes to ensure data availability, integrity, and reliability for operational and reporting requirements across 35 customer sites.</li>
-                                <li>Managed software and database administration while providing customer support across multiple systems.</li>
-                                <li>Troubleshot SQL stored procedures.</li>
-                                <li>Developed and deployed a Razor Pages application within the EcoStruxure Power Monitoring Expert environment.</li>
-                                <li>Built a data extraction and compilation tool to automate and improve internal analytics processes.</li>
-                                <li>Supported on-site electricians and engineers with GSM communication solutions.</li>
-                            </ul>
-                        </div>
-                    </div>
-                </li>
-                <li id="carousel__slide2"
-                    tabindex="0"
-                    class="carousel__slide">
+
+        <div class="work-tabs">
+        <button class="work-tab-btn active" onclick="workSwitchTab('careers', this)">Career</button>
+        <button class="work-tab-btn" onclick="workSwitchTab('projects', this)">Projects</button>
+        </div>
+
+
+        <div id="work-tab-careers" class="work-tab-panel active">
+        <section class="carousel" aria-label="Career history">
+            <ul class="carousel__viewport" id="career-viewport">
+
+            <li id="carousel__slide1" tabindex="0" class="carousel__slide">
                 <div class="carousel__snapper">
-                        <div class="work-positions">    
-                            <h3>Recruitment Researcher - Zecutive Consultants | <b>Sep 2021 - August 2022</b></h3>
-                            <ul class="work-duties-list">    
-                                <li>Back-end administrative assistance</li>
-                                <li>Updating data on software systems, various online platforms</li>
-                                <li>Searching and Screening, matching applications to job specifications</li>
-                                <li>Placing of adverts on various platforms</li>
-                                <li>Liaising with Clients</li>
-                                <li>Calling candidates, discussions, and follow-up</li>
-                                <li>IT Support</li>
-                                <li>Software Systems Training</li>
-                                <li>Personal assistance, duties reasonably assigned by management</li>
-                                <li>General filing and upkeep of records.</li>
-                            </ul>
-                        </div>  
+                <div class="work-positions">
+                    <h3>IT Technician / Data Analyst - BBEnergy | <b>August 2022 - April 2026</b></h3>
+                    <ul class="work-duties-list">
+                    <li>Provided end-user technical support for IT hardware and software.</li>
+                    <li>Installed, configured, maintained, and monitored Windows Server-based systems.</li>
+                    <li>Installed, configured, maintained, and monitored Linux servers for SFTP and file services.</li>
+                    <li>Deployed and configured systems, software, and SaaS solutions, including IoT platforms such as EcoStruxure Power Monitoring Expert, SQL Server, SQL Server Reporting Services (SSRS), and IIS web servers.</li>
+                    <li>Managed deployments and database migrations on Microsoft Azure cloud platforms.</li>
+                    <li>Performed data migrations, network support, and server administration tasks.</li>
+                    <li>Assisted with API integration and troubleshooting using tools such as Postman and other third-party platforms.</li>
+                    <br>
+                    <li>Managed data and analytics processes to ensure data availability, integrity, and reliability for operational and reporting requirements across 35 customer sites.</li>
+                    <li>Managed software and database administration while providing customer support across multiple systems.</li>
+                    <li>Troubleshot SQL stored procedures.</li>
+                    <li>Developed and deployed a Razor Pages application within the EcoStruxure Power Monitoring Expert environment.</li>
+                    <li>Built a data extraction and compilation tool to automate and improve internal analytics processes.</li>
+                    <li>Supported on-site electricians and engineers with GSM communication solutions.</li>
+                    </ul>
                 </div>
-                </li>
-                <li id="carousel__slide3"
-                    tabindex="0"
-                    class="carousel__slide">
+                </div>
+            </li>
+
+            <li id="carousel__slide2" tabindex="0" class="carousel__slide">
                 <div class="carousel__snapper">
-                        <div class="work-positions">
-                            <h3>Front-End Dev Internship Program - Brainnest | <b>May 2022 - June 2022</b></h3>
-                            <ul class="work-duties-list">    
-                                <li>This intensive one-month training program encompasses tasks and responsibilities that you might find in a regular internship and directions, lectures, and practicum projects that you might find in a regular training program.</li>
-                                <li>The program consists of four weeks, with four parts of a project.</li>
-                                <li>Individual work on projects.</li>
-                                <li>Attend Zoom meetings.</li>
-                            </ul>
-                        </div>     
+                <div class="work-positions">
+                    <h3>Recruitment Researcher - Zecutive Consultants | <b>Sep 2021 - August 2022</b></h3>
+                    <ul class="work-duties-list">
+                    <li>Back-end administrative assistance</li>
+                    <li>Updating data on software systems, various online platforms</li>
+                    <li>Searching and Screening, matching applications to job specifications</li>
+                    <li>Placing of adverts on various platforms</li>
+                    <li>Liaising with Clients</li>
+                    <li>Calling candidates, discussions, and follow-up</li>
+                    <li>IT Support</li>
+                    <li>Software Systems Training</li>
+                    <li>Personal assistance, duties reasonably assigned by management</li>
+                    <li>General filing and upkeep of records.</li>
+                    </ul>
                 </div>
-                </li>
+                </div>
+            </li>
+
+            <li id="carousel__slide3" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                <div class="work-positions">
+                    <h3>Front-End Dev Internship Program - Brainnest | <b>May 2022 - June 2022</b></h3>
+                    <ul class="work-duties-list">
+                    <li>This intensive one-month training program encompasses tasks and responsibilities that you might find in a regular internship and directions, lectures, and practicum projects that you might find in a regular training program.</li>
+                    <li>The program consists of four weeks, with four parts of a project.</li>
+                    <li>Individual work on projects.</li>
+                    <li>Attend Zoom meetings.</li>
+                    </ul>
+                </div>
+                </div>
+            </li>
+
             </ul>
             <aside class="carousel__navigation">
-                <ul class="carousel__navigation-list">
-                <li class="carousel__navigation-item">
-                    <a href="#carousel__slide1"
-                    class="carousel__navigation-button">Go to slide 1</a>
-                </li>
-                <li class="carousel__navigation-item">
-                    <a href="#carousel__slide2"
-                    class="carousel__navigation-button">Go to slide 2</a>
-                </li>
-                <li class="carousel__navigation-item">
-                    <a href="#carousel__slide3"
-                    class="carousel__navigation-button">Go to slide 3</a>
-                </li>
-                </ul>
+            <ul class="carousel__navigation-list" id="career-dots"></ul>
             </aside>
         </section>
+        </div>
+
+        <div id="work-tab-projects" class="work-tab-panel">
+        <section class="carousel" aria-label="Projects">
+            <ul class="carousel__viewport" id="project-viewport">
+
+            <li id="project__slide1" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                <div class="work-positions">
+                    <h3>Spotify REST API Web Application | <b>.NET Framework</b></h3>
+                    <ul class="work-duties-list">
+                    <li>
+                        Developed a simple web application using the .NET Framework that integrates with the Spotify Web API to retrieve and interact with music data. 
+                        The application demonstrates RESTful API consumption, authentication handling, and external service integration.
+                    </li>
+                    <h4>Key Features</h4>
+                        <li>Connected to Spotify using OAuth 2.0 authentication</li>
+                        <li>Retrieved user or public Spotify data via REST API calls</li>    
+                        <li>Processed and displayed JSON responses in a structured format</li>   
+                        <li>Implemented HTTP GET requests to interact with Spotify endpoints</li>  
+                        <li>Built a simple UI for viewing API results</li>  
+                        <li>Automated retrieval of music-related data (tracks, playlists, or artist info)</li> 
+                    </ul>
+                </div>
+                </div>
+            </li>
+
+            <li id="project__slide2" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                <div class="work-positions">
+                    <h3> JSON Data Processing | <b>C# Win Service</b></h3>
+                    <ul class="work-duties-list">
+                        <li>
+                            Developed a C# service that processes JSON data received from an IoT SaaS platform. 
+                            The service extracts relevant device data and automatically transforms it into a structured format, 
+                            which is then exported into Microsoft Excel for reporting and analysis.
+                        </li>
+                        <h4>Key Features</h4>
+                        <li>Ingested JSON payloads from an IoT SaaS platform</li>
+                        <li>Parsed and mapped nested JSON structures into usable data models</li>
+                        <li>Extracted key telemetry/device information (e.g., timestamps, device IDs, sensor values)</li>
+                        <li>Automated conversion of structured JSON data into Excel using C# Excel libraries.</li>
+                        <li>Scheduled or service-based execution for continuous processing</li>
+                        <li>Ensured data consistency and error handling for malformed or missing JSON fields</li>
+                    </ul>
+                </div>
+                </div>
+            </li>
+
+            <li id="project__slide3" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                <div class="work-positions">
+                    <h3>PME Razor Pages | <b>.NET Core</b></h3>
+                    <ul class="work-duties-list">
+                    <li>
+                        Developed and embedded a Razor Pages web application into EcoStruxure Power Monitoring Expert (PME) to display a lightweight, 
+                        real-time dashboard for monitoring electrical and energy-related data.
+                    </li>
+                    <h4>Key Features</h4>
+                        <li>Built a custom web-based dashboard using Razor Pages</li>
+                        <li>Embedded the application directly into the EcoStruxure PME environment</li>
+                        <li>Displayed key STXYZ energy metrics in a graph</li>
+                        <li>Integrated backend data sources to populate live or near-real-time values</li>
+                        <li>Enabled seamless access to custom views within the PME platform</li>
+                    </ul>
+                </div>
+                </div>
+            </li>
+
+                <li id="project__slide4" tabindex="0" class="carousel__slide">
+                <div class="carousel__snapper">
+                <div class="work-positions">
+                    <h3>Various | <b>.NET, Flutter, Python, AI</b></h3>
+                    <ul class="work-duties-list">
+                        <li>Developed a macro tracking web application using .NET and C#.</li>
+                        <li>Built small-scale mobile applications using Flutter to explore cross-platform development.</li>
+                        <li>Gaining experience with modern development practices across web, mobile, and AI-focused applications.</li>
+                    </ul>
+                </div>
+                </div>
+            </li>
+            </ul>
+            <aside class="carousel__navigation">
+            <ul class="carousel__navigation-list" id="project-dots"></ul>
+            </aside>
+        </section>
+        </div>
 
         <div class="section">
 			<div class="featured">
@@ -161,42 +241,52 @@
 			</div>
 		</div>
 	</div>
+
 	<script>
-	(function() {
-	  const carousel = document.querySelector('.carousel__viewport');
-	  const slides = Array.from(document.querySelectorAll('.carousel__slide'));
-	  const buttons = Array.from(document.querySelectorAll('.carousel__navigation-button'));
+function workSwitchTab(id, btn) {
+    document.querySelectorAll('.work-tab-panel').forEach(function(p) {
+      p.classList.remove('active');
+    });
+    document.querySelectorAll('.work-tab-btn').forEach(function(b) {
+      b.classList.remove('active');
+    });
+    document.getElementById('work-tab-' + id).classList.add('active');
+    btn.classList.add('active');
+  }
 
-	  function setActiveButton(index) {
-	    buttons.forEach((button, i) => {
-	      button.classList.toggle('active', i === index);
-	    });
-	  }
+  function workInitCarousel(viewportId, dotsId) {
+    var viewport = document.getElementById(viewportId);
+    var dotsContainer = document.getElementById(dotsId);
+    if (!viewport || !dotsContainer) return;
 
-	  function updateActiveSnap() {
-	    if (!carousel) return;
-	    const viewportRect = carousel.getBoundingClientRect();
-	    let activeIndex = 0;
-	    let minDistance = Infinity;
+    var slides = viewport.querySelectorAll('.carousel__slide');
 
-	    slides.forEach((slide, index) => {
-	      const rect = slide.getBoundingClientRect();
-	      const distance = Math.abs(rect.left - viewportRect.left);
-	      if (distance < minDistance) {
-	        minDistance = distance;
-	        activeIndex = index;
-	      }
-	    });
+    slides.forEach(function(_, i) {
+      var li = document.createElement('li');
+      li.className = 'carousel__navigation-item';
 
-	    setActiveButton(activeIndex);
-	  }
+      var btn = document.createElement('button');
+      btn.className = 'carousel__navigation-button' + (i === 0 ? ' active' : '');
+      btn.setAttribute('aria-label', 'Go to slide ' + (i + 1));
+      btn.textContent = 'Go to slide ' + (i + 1);
+      btn.addEventListener('click', function() {
+        viewport.scrollTo({ left: viewport.offsetWidth * i, behavior: 'smooth' });
+      });
 
-	  carousel?.addEventListener('scroll', () => {
-	    requestAnimationFrame(updateActiveSnap);
-	  });
-	  window.addEventListener('resize', updateActiveSnap);
-	  window.addEventListener('load', updateActiveSnap);
-	})();
+      li.appendChild(btn);
+      dotsContainer.appendChild(li);
+    });
+
+    viewport.addEventListener('scroll', function() {
+      var idx = Math.round(viewport.scrollLeft / viewport.offsetWidth);
+      dotsContainer.querySelectorAll('.carousel__navigation-button').forEach(function(b, i) {
+        b.classList.toggle('active', i === idx);
+      });
+    });
+  }
+
+  workInitCarousel('career-viewport', 'career-dots');
+  workInitCarousel('project-viewport', 'project-dots');
 	</script>
 </body>
 </html>
