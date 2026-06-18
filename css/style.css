@@ -96,6 +96,7 @@ body {
 	width: 100%;
 	box-sizing: border-box;
 	color: rgb(0, 0, 0);
+	
 }
 /* Article Heading */
 #header .article h1 {
@@ -113,6 +114,7 @@ body {
 	min-height: 812px;
 	padding: 20px 0 50px;
 	width: 960px;
+	
 }
 #body > div {
 	margin: 0;
@@ -204,10 +206,11 @@ body {
 	position: relative;
 }
 #body div .section .article {
-	height: 183px;
+	height: 250px;
 	margin-bottom: 25px;
 	padding: 55px 15px 20px;
 	text-align: right;
+	
 }
 #body div .section .article h2 {
 	text-align: left;
